@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundo</title>
     <style>
-        html, body {
+       /* html, body {
             margin: 0;
             padding: 0;
             min-height: 100vh;
             height: 100vh;
-        }
+        }*/
         body {
+            height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-repeat: repeat-y; 
-            background-attachment: scroll;
-            background-position: right bottom;
+            background-position: center center;
+            background-repeat: no-repeat; 
             background-size: cover;
+            background-attachment: fixed;
             
             /* background: black url('imagens/wallpaper002.jpg') no-repeat fixed center center; */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             margin: auto;
             padding: 10px;
         }
@@ -32,7 +33,7 @@
         div{           
             color: aqua;
             padding: 25px;
-            margin: 5px;
+            margin: auto;
             font-size: 20px;
             text-align: center;
             border: 5px solid rgba(0, 0, 0, 0.548);
@@ -45,9 +46,13 @@
         div >a{
             color: antiquewhite;
             text-decoration: none;
+            padding: 5px;
+            border: 2px solid black;
         }
         a:hover{
             text-decoration: underline;
+            background-color: aqua;
+            color: red;
         }
     </style>
 </head>
@@ -60,9 +65,10 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam atque facilis illum illo voluptates, laboriosam dignissimos vero error debitis, neque suscipit delectus et eligendi dolorum aut expedita consequatur. Et! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quaerat earum culpa ad. Eaque sed sunt adipisci nam eos dolore nulla rerum. Sapiente alias at magni debitis, voluptatibus tempora impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nostrum! Quidem, voluptate necessitatibus iusto doloribus sint corporis dolores quod consequatur? Ipsum accusamus enim ipsam, molestias placeat voluptatibus debitis velit expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit autem quo dolores, exercitationem facilis veritatis officia nisi alias eaque non dignissimos qui totam quod at repudiandae tempore temporibus rem.</p>
     </main>
 
-    <div>Voltar a página anterior <a href="fundo003.html" rel="prev" target="_self"> Voltar a página 03</a>
-
-    Página seguinte<a href="fundo005.html" rel="next" target="_self">Proxima página</a></div>
+    <div class="botao">Voltar a página anterior <a href="fundo004.html" rel="prev" target="_self"> Voltar a página 03</a>
+    </div>
+    <div>Página seguinte<a href="fundo005.html" rel="next" target="_self">Proxima página</a>
+    </div>
     
 </body>
 </html>
